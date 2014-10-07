@@ -701,7 +701,7 @@ namespace K4WJointVisualizer.ViewModels
         {
             Point retval = lineTo;
             // Try to place the text outside of the body but connected to the line...
-            if (lineFrom.X < lineTo.X + 10)
+            if (lineFrom.X > lineTo.X + 10)
             {
                 retval.X = lineTo.X - ftxt.Width;
             }
